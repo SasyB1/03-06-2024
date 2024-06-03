@@ -9,8 +9,6 @@ export class AuthService {
   authSubject = new BehaviorSubject<boolean>(false);
   isLoggedIn$ = this.authSubject.asObservable();
 
-  isLoggedIn = false;
-
   constructor(private router: Router) {}
 
   login() {
